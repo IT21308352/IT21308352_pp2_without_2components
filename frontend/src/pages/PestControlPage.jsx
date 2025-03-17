@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const PestControlPage = () => {
+    const navigate = useNavigate(); // Initialize the navigate function
+
     return (
         <div className="bg-gradient-to-b from-green-50 to-white min-h-screen py-16">
             <motion.div
@@ -212,8 +215,11 @@ const PestControlPage = () => {
                         Use Rice Genie's AI-powered tools to get personalized pest control recommendations 
                         and ensure a healthy and productive harvest.
                     </p>
-                    <button className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-full shadow-md transition-all duration-300 transform hover:scale-105">
-                        Get Pest Control Analysis
+                    <button
+                        className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-full shadow-md transition-all duration-300 transform hover:scale-105"
+                        onClick={() => navigate("/input-form")} // Redirect to input page
+                    >
+                        Get Analysis
                     </button>
                 </motion.div>
             </motion.div>

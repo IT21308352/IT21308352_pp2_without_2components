@@ -123,7 +123,7 @@ const HarvestPlanningPage = () => {
                         onClick={() => navigate("/input-form")}
                         className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-full shadow-md transition-all duration-300 transform hover:scale-105"
                     >
-                        Get Harvest Insights
+                        Get Analysis
                     </button>
                 </motion.div>
             </motion.div>
